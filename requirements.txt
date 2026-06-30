@@ -1,0 +1,12 @@
+# Twin Postcards — solver dependencies
+# Install into a virtual environment, e.g.:
+#   python3 -m venv venv
+#   ./venv/bin/pip install -r requirements.txt
+
+gmpy2==2.3.1          # fast big-integer math (isqrt, integer roots, primality)
+pycryptodome==3.23.0  # AES-CTR decryption
+sympy==1.14.0         # exact polynomial root-finding + CRT
+fpylll==0.6.4         # LLL lattice reduction (Coppersmith)
+cysignals==1.12.6     # runtime dependency of fpylll
+mpmath==1.3.0         # high-precision arithmetic (pulled in by sympy)
+pillow==12.2.0        # render raw RGB bytes to a PNG
